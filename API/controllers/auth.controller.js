@@ -9,9 +9,9 @@ class AuthController {
 
     async login(value) {
         try {
+            console.log('login')
             const user = await db.users.findOne({ email: value.email });
             if (!user) return false;
-            // if(!user || d) return null;
             console.log('user', user);
 
             const compare = await bcrypt.compare(value.password, user.password);

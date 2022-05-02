@@ -18,7 +18,7 @@ import {
 import UpdateForm from './UpdateForm';
 import User, { initialUser } from '../../../../Interfaces/user.interface';
 import Action from '../../../../Interfaces/action.interface';
-import UserInfo from '../../../common/UserInfo';
+import UserCard from '../../../common/UserCard';
 import Btn from '../../../common/Btn';
 import actions from '../../../../redux/actions';
 
@@ -190,7 +190,7 @@ const Schema = () => {
                     <ModalHeader>Thông tin nhân viên</ModalHeader>
                     <ModalCloseButton />
                     <ModalBody>
-                        <UserInfo item={state.user} />
+                        <UserCard item={state.user} />
                     </ModalBody>
 
                     <ModalFooter>
@@ -207,7 +207,7 @@ const Schema = () => {
                     <ModalHeader>Xóa tài khoản</ModalHeader>
                     <ModalCloseButton />
                     <ModalBody>
-                        <UserInfo item={state.user} position />
+                        <UserCard item={state.user} position />
                         <Text textAlign='center' lineHeight={1.7}>Bạn có chắn chắn muốn xóa tài khoản này không?</Text>
                     </ModalBody>
 

@@ -10,7 +10,7 @@ type UserInfoProps = {
     position?: boolean;
 }
 
-const UserInfo = ({ item, position }: UserInfoProps) => {
+const UserCard = ({ item, position }: UserInfoProps) => {
     const { firstName, lastName, email, role, file, age } = item;
 
     return (
@@ -31,4 +31,4 @@ const UserInfo = ({ item, position }: UserInfoProps) => {
     )
 };
 
-export default UserInfo;
+export default UserCard;

@@ -44,7 +44,7 @@ const Btn = (props: Props) => {
             bgGradient={bg ? 'none' : 'linear(to-r, brand.100, brand.200)'}
             bg={bg}
             borderRadius="100"
-            boxShadow='dark-lg'
+            boxShadow='md'
             h={9}
             color='white'
             overflow='hidden'
